@@ -14,3 +14,5 @@ if getInput():len() > 0 then           -- checks if an string was received
 color = json.decode(getInput())        --sets color to the received string value
 end
 ```
+based on the code from Krengus
+https://github.com/Krengus/DU_ASTco/tree/main/ScreenLightControl
