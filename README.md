@@ -9,10 +9,11 @@ it also sends RGBH values to all connected screens via setScriptInput(json.encod
 can be fetched in connected screens with:
 ```
 local json = require('json')
-color = {r=1,g=0,b=0}                  -- default fallback color if no input was ever send to the screen.
+color1 = {r=1,g=0,b=0,h=1}             -- default fallback color if no input was ever send to the screen.
 if getInput():len() > 0 then           -- checks if an string was received
-color = json.decode(getInput())        --sets color to the received string value
+color1 = json.decode(getInput())       -- sets color to the received string value
 end
+
 ```
 based on the code from Krengus
 https://github.com/Krengus/DU_ASTco/tree/main/ScreenLightControl
